@@ -18,16 +18,16 @@ Pre-requisites:
 
 ### Creating your own Build Job
 
-	Create a Jenkins job and tick the "Build when a change is pushed to GitLab" Build Trigger. Next, make sure that the checkbox for the "Build on Merge Request Events" is also checked.
+Create a Jenkins job and tick the "Build when a change is pushed to GitLab" Build Trigger. Next, make sure that the checkbox for the "Build on Merge Request Events" is also checked.
 
-	Take note of the "GitLab CI Service URL" as well. You will need it on setting up your GitLab webhook.
+Take note of the "GitLab CI Service URL" as well. You will need it on setting up your GitLab webhook.
 	
-	On the post-build events, Add the "Publish build status to GitLab commit" step.
+On the post-build events, Add the "Publish build status to GitLab commit" step.
 	
 
 ## GitLab
-	For the build job to be triggered when a Merge Request event occurs, you need to setup your GitLab project's webhooks.
+For the build job to be triggered when a Merge Request event occurs, you need to setup your GitLab project's webhooks.
 	
-	Go to your Project's page > Settings > Webhooks.
+Go to your Project's page > Settings > Webhooks.
 	
-	On the URL, insert the "GitLab CI Service URL" that is on your Jenkins Build Job earlier. On the webhook triggers, check the "Merge Request events" box.
+On the URL, insert the "GitLab CI Service URL" that is on your Jenkins Build Job earlier. On the webhook triggers, check the "Merge Request events" box.
